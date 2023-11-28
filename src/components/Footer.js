@@ -6,7 +6,9 @@ import {
   AiFillInstagram,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
-import { SiCodeforces,SiLeetcode  } from "react-icons/si";
+import { SiCodeforces } from "react-icons/si";
+import { FaTwitter } from "react-icons/fa";
+
 
 function Footer() {
   let date = new Date();
@@ -15,16 +17,16 @@ function Footer() {
     <Container fluid className="footer">
       <Row>
         <Col md="4" className="footer-copywright">
-          <h3>Designed and Developed by Dhruv Chandak</h3>
+          <h3>Designed and Developed by Krishna Khattri</h3>
         </Col>
         <Col md="4" className="footer-copywright">
-          <h3>Copyright © {year} DC</h3>
+          <h3>Copyright © {year} KKK</h3>
         </Col>
         <Col md="4" className="footer-body">
           <ul className="footer-icons">
             <li className="social-icons">
               <a
-                href="https://github.com/dhruvchandak30"
+                href="https://github.com/KrishnaKhattri-27"
                 style={{ color: "white" }}
                 target="_blank" 
                 rel="noopener noreferrer"
@@ -34,7 +36,7 @@ function Footer() {
             </li>
             <li className="social-icons">
                 <a
-                  href="https://www.linkedin.com/in/dhruvchandak30/"
+                  href="https://www.linkedin.com/in/krishna-khattri/"
                   style={{ color: "white" }}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -45,7 +47,7 @@ function Footer() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://codeforces.com/profile/dhruv3005"
+                  href="https://codeforces.com/profile/khattri_krishna"
                   style={{ color: "white" }}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -56,13 +58,13 @@ function Footer() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://leetcode.com/dhruv3005/"
+                  href="https://twitter.com/Krishna_K271"
                   style={{ color: "white" }}
                   target="_blank"
                   rel="noopener noreferrer"
                  
                 >
-                  <SiLeetcode  />
+<FaTwitter />
                 </a>
               </li>
        

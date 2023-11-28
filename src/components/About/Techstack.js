@@ -6,7 +6,6 @@ import {
   DiReact,
   DiNodejs,
   DiMongodb,
-  DiPython,
   DiGit,
   DiJava,
 } from "react-icons/di";
@@ -15,6 +14,7 @@ import {
   SiGithub,
   SiSocketdotio,
   SiTailwindcss,
+  SiBootstrap 
 } from "react-icons/si";
 import { SiFirebase, SiNextdotjs, SiPostgresql } from "react-icons/si";
 import { TbBrandGolang } from "react-icons/tb";
@@ -23,45 +23,49 @@ function Techstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
       <Col xs={4} md={2} className="tech-icons">
-        <CgCPlusPlus />
+        <CgCPlusPlus style={{color:"#cd5ff8"}}/>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiTailwindcss />
+        <SiTailwindcss style={{color:"#cd5ff8"}}/>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiJavascript1 />
+        <DiJavascript1 style={{color:"#cd5ff8"}}/>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiNodejs />
+        <DiNodejs style={{color:"#cd5ff8"}}/>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiReact />
+        <DiReact style={{color:"#cd5ff8"}}/>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiMongodb />
+        <DiMongodb style={{color:"#cd5ff8"}}/>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiGit />
+        <DiGit style={{color:"#cd5ff8"}}/>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiGithub />
+        <SiGithub style={{color:"#cd5ff8"}}/>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiFirebase />
-      </Col>
-
-      <Col xs={4} md={2} className="tech-icons">
-        <SiMysql />
+        <SiFirebase style={{color:"#cd5ff8"}}/>
       </Col>
 
       <Col xs={4} md={2} className="tech-icons">
-        <DiJava />
+        <SiMysql style={{color:"#cd5ff8"}}/>
+      </Col>
+
+      <Col xs={4} md={2} className="tech-icons">
+        <DiJava style={{color:"#cd5ff8"}}/>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiNextdotjs />
+        <SiNextdotjs style={{color:"#cd5ff8"}}/>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiSocketdotio />
+        <SiSocketdotio style={{color:"#cd5ff8"}}/>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+      <SiBootstrap style={{color:"#cd5ff8"}}/>
+
       </Col>
     </Row>
   );

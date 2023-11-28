@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import myImg from "../../Assets/Dhruv.jpeg";
+import myImg from "../../Assets/krishna.jpg";
 import Tilt from "react-parallax-tilt";
 import Techstack from "../About/Techstack";
 import {
