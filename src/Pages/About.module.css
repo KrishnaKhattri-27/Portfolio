@@ -1,0 +1,120 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: auto;
+  /* background-image: url(../assets/dummy1.png); */
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.aboutContent {
+  width: 90%;
+  max-width: 550px;
+  margin: 50px 0;
+}
+
+.aboutContentItem {
+  text-align: center;
+}
+
+.aboutContentItem .aboutImage {
+  width: 140px;
+  height: 140px;
+  margin: auto;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  transition: var(--transitions);
+}
+
+.aboutContentItem .aboutImage:hover {
+  transform: scale(1.1);
+}
+
+.aboutContentItem p {
+  font-size: var(--paragraph-font-size);
+  line-height: calc(var(--paragraph-font-size) * 1.7);
+}
+
+.aboutContentItem h3,
+.aboutContentItem p {
+  margin-bottom: 2rem;
+  font-weight: 400;
+}
+
+u.underline {
+  text-decoration: var(--accent) wavy underline 2px;
+}
+
+.aboutContentItem h3::after {
+  content: "";
+  display: block;
+  width: 30%;
+  height: 1px;
+  background: var(--theme-borders);
+  margin: auto;
+  margin-top: 1rem;
+}
+
+.aboutContentItem .aboutSocial {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+.aboutContentItem .aboutSocial li {
+  margin-right: 25px;
+}
+
+.aboutContentItem .aboutSocial li:last-child {
+  margin-right: 0;
+}
+
+.aboutContentItem .aboutSocial li svg {
+  width: 40px;
+  height: auto;
+  stroke: var(--icon-color);
+  padding: 10px;
+  background-color: var(--icon-bg-color);
+  border-radius: 5px;
+  transition: var(--transitions);
+}
+
+.aboutContentItem .aboutSocial li svg:hover {
+  stroke: var(--icon-color-hover);
+  background-color: var(--icon-bg-hover-color);
+}
+
+@media only screen and (max-width: 800px) {
+  .aboutContentItem .aboutImage {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 1rem;
+  }
+
+  .aboutContentItem h1 {
+    font-size: var(--res-title-font-size);
+  }
+
+  .aboutContentItem h3 {
+    font-size: var(--res-title-sub-font-size);
+  }
+
+  .aboutContentItem > p {
+    text-align: center;
+    columns: 1 auto;
+  }
+
+  .aboutContentItem p {
+    font-size: var(--res-paragraph-font-size);
+    line-height: calc(var(--res-paragraph-font-size) * 1.9);
+  }
+}
